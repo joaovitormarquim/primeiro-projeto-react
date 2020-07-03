@@ -1,7 +1,12 @@
 import React from 'react';
 
-function App(): JSX.Element {
-  return <h1>Hello world!</h1>;
-}
+import { BrowserRouter } from 'react-router-dom';
+import Routes from './routes';
+
+const App: React.FC = () => (
+  <BrowserRouter>
+    <Routes />
+  </BrowserRouter>
+);
 
 export default App;
